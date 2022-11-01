@@ -5,6 +5,13 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
+
 export class AppComponent {
-  title = 'AngularCountdown';
+  year: number = new Date().getFullYear();
+  month: number = new Date().getMonth();
+
+  nnnShow: boolean = (this.month == 10);
+
+
 }

@@ -1,0 +1,24 @@
+.specialevent
+{
+    font-size: 10px;
+    background-color: #166aaa;
+    border-radius: 8px;
+    padding: 2px 4px;
+    color: #fff;
+    line-height: 12px;
+    display: block;
+    transform: rotateZ(8deg) translateX(-18px) translateY(-7px);
+}
+
+.mat-tab-group
+{
+    height: 100vh;
+    width: 100vw;
+}
+
+.mat-tab-body
+{
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+}
