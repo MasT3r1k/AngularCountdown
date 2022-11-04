@@ -14,36 +14,87 @@
     background-color: #fff;
     min-width: 80px;
     width: 80px;
-    max-width: 80px;
     text-align: center;
-    max-height: 200px;
     min-height: 200px;
 }
 
 .card div
 {
     display: flex;
-    height: 100px;
     justify-content: center;
     padding: .75rem 0;
 }
 
-.row div div:first-child { height: 115px; }
-.row div div:last-child { height: 85px; }
-.row div:nth-child(2n) div:first-child { height: 75px; }
-.row div:nth-child(2n) div:last-child { height: 125px; }
-
 .number
 {
     font-size: 28px;
-    align-items: flex-end;
 }
 
 .description
 {
-    align-items: flex-start;
+    border-bottom-right-radius: inherit;
     background-color: #2999ed;
     color: #fff;
-    border-bottom-left-radius: inherit;
-    border-bottom-right-radius: inherit;
+}
+
+@media screen and (min-width: 750px)
+{
+
+    .row div div:first-child { height: 115px; }
+    .row div div:last-child { height: 85px; }
+    .row div:nth-child(2n) div:first-child { height: 75px; }
+    .row div:nth-child(2n) div:last-child { height: 125px; }
+
+    .number
+    {
+        align-items: flex-end;
+    }
+
+
+    .description
+    {
+        align-items: flex-start;
+        border-bottom-left-radius: inherit;
+    }
+    
+    .card div
+    {
+        height: 100px;
+    }
+
+}
+
+@media screen and (max-width: 750px)
+{
+    .row
+    {
+        flex-direction: column;
+    }
+
+    .card
+    {
+        min-height: unset;
+        display: flex;
+        height: 80px;
+        width: 250px;
+        justify-content: center;
+    }
+
+    .description
+    {
+        align-items: flex-start;
+        border-top-right-radius: inherit;
+    }
+
+    .card div
+    {
+        flex-direction: row;
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+
+    .row div.card:nth-child(2n) { width: 350px; }
+
+
 }
