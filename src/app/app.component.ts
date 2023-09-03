@@ -10,8 +10,4 @@ import { Component } from '@angular/core';
 export class AppComponent {
   year: number = new Date().getFullYear();
   month: number = new Date().getMonth();
-
-  nnnShow: boolean = (this.month == 10);
-
-
 }
