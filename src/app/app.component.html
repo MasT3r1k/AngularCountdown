@@ -5,10 +5,4 @@
   <mat-tab label="Nový rok">
     <countdown style="background-image: url('assets/new_year_background.png');" [day]=1 [month]=1 [year]=year+1></countdown> 
   </mat-tab>
-  <mat-tab *ngIf="nnnShow">
-    <ng-template mat-tab-label>No nut november <div class="specialevent">1. 11. - 30. 11.</div></ng-template>
-    <ng-template matTabContent>
-      <countdown style="background-image: url('assets/no_nut_november_background.png');" [day]=30 [month]=11 [year]=year></countdown> 
-    </ng-template>
-  </mat-tab>
 </mat-tab-group>
